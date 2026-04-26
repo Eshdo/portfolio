@@ -1,0 +1,437 @@
+/* BASE STYLES */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  line-height: 1.6;
+}
+
+/* --- BASE RESET (to remove default page margins) --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Base body styles from the reference image */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0d1117; /* Dark grayish-blue */
+  color: #c9d1d9; /* Lighter grayish-white text */
+}
+
+/* --- THE NAVIGATION BAR (ALIGNMENT) --- */
+
+.navbar {
+  /* Fix it to the top of the page */
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  
+  /* 1. APPLY FLEXBOX TO THE CONTAINER */
+  display: flex;
+  
+  /* 2. PUSH CHILDREN TO FAR SIDES */
+  justify-content: space-between;
+  
+  /* 3. VERTICALLY CENTER ALL CONTENT */
+  align-items: center;
+
+  /* Styles from reference image */
+  background-color: #111827; /* Solid dark background */
+  padding: 20px 40px; /* Top/Bottom and Left/Right space */
+  z-index: 1000; /* Ensure it stays on top of content */
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+/* --- BRAND/NAME STYLING (LEFT) --- */
+
+.nav-brand a {
+  font-size: 1.6rem; /* Make the name larger */
+  font-weight: 700; /* Bold font */
+  color: white; /* White text */
+  text-decoration: none; /* No underline */
+  display: flex;
+  align-items: center;
+}
+
+/* The specific colored period from the image */
+.blue-dot {
+  color: #38bdf8; /* The distinctive teal/blue from your reference image */
+  margin-left: 2px;
+}
+
+/* --- LINKS GROUP STYLING (RIGHT) --- */
+
+.nav-links {
+  /* Make the links sit in a row */
+  display: flex;
+  /* Add even spacing between the links */
+  gap: 30px;
+}
+
+.nav-links a {
+  color: white; /* White text for all links */
+  text-decoration: none; /* No default underline */
+  font-weight: 600; /* Slightly bold for readability */
+  font-size: 1.1rem;
+  
+  /* Prepare for the custom active underline */
+  position: relative;
+  padding-bottom: 5px; /* Add some space below the text */
+  
+  transition: color 0.3s ease;
+}
+
+/* Hover effect */
+.nav-links a:hover {
+  color: #38bdf8; /* Color changes to teal on hover */
+}
+
+/* --- 4. STYLE THE ACTIVE LINK (teal underline) --- */
+
+.nav-links a.active {
+  color: #38bdf8; /* active link is also teal */
+}
+
+.nav-links a.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%; /* Line is as wide as the text */
+  height: 3px; /* Thickness of the underline */
+  background-color: #38bdf8; /* Teal color for the line */
+}
+
+/* SECTIONS */
+section {
+  min-height: 100vh;
+  padding: 100px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+/* HERO */
+.hero p {
+  margin: 5px 0;
+  color: #cbd5e1;
+}
+
+.profile {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #38bdf8;
+  margin-bottom: 20px;
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.3);
+}
+/* --- SOCIAL ICONS STYLE --- */
+
+.social-icons {
+  margin-top: 30px; /* Add some space above the icons */
+  display: flex; /* Make them sit side-by-side */
+  justify-content: center; /* Center them on the page */
+  gap: 20px; /* Add space between each icon */
+}
+
+.social-icons a {
+  font-size: 2rem; /* Make the icons larger (2x default size) */
+  color: white; /* Give them a base color (matches your text) */
+  text-decoration: none; /* Remove any underlines */
+  transition: all 0.3s ease; /* Add a smooth animation for the hover effect */
+}
+
+/* --- HOVER EFFECT --- */
+/* This part changes the icons when you mouse over them */
+.social-icons a:hover {
+  color: #38bdf8; /* Change to your accent color (from your .btn class) */
+  transform: translateY(-5px); /* Make the icon "jump" up slightly */
+}
+
+h1 {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+}
+
+#typing {
+  color: #38bdf8;
+  height: 30px;
+  margin-bottom: 20px;
+}
+#skiltyping{
+  color: #37bdf8;
+  height: 25px;
+  margin-bottom: 20px;
+}
+/* Blinking animation for the typing cursor */
+@keyframes blinkCursor {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+/* BUTTONS */
+.btn {
+  display: inline-block;
+  margin-top: 25px;
+  padding: 12px 25px;
+  background: #38bdf8;
+  border-radius: 8px;
+  color: #0f172a;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn:hover {
+  background: #7dd3fc;
+  transform: translateY(-3px);
+  box-shadow: 0 10px 15px -3px rgba(56, 189, 248, 0.4);
+}
+
+.btn-small {
+  margin-top: 15px;
+  padding: 8px 15px;
+}
+.social-links {
+      display: flex;
+      gap: 15px;
+      margin-top: 15px;
+    }
+
+    .social-links a {
+      color: var(--text-muted);
+      font-size: 1.8rem;
+      transition: var(--transition);
+    }
+
+    .social-links a:hover {
+      color: var(--primary-color);
+      transform: translateY(-3px);
+    }
+/* PROJECTS */
+/* --- RESET STYLES FOR CONSISTENCY --- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Base Body Styles from image */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0f172a; /* Darkest slate */
+  color: #e2e8f0;
+}
+
+/* NAVBAR (Kept your positioning, styled for image) */
+nav {
+  position: fixed;
+  width: 100%;
+  background: #111827; /* Dark grayish-blue */
+  padding: 20px 0;
+  top: 0;
+  text-align: center;
+  z-index: 1000;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+nav a {
+  margin: 0 20px;
+  color: #38bdf8; /* Teal color */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+/* --- PROJECTS SECTION ALIGNMENT --- */
+
+.projects {
+  /* This centers the title and the container */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  
+  padding: 120px 20px 80px; /* Padding for Navbar */
+  background-color: #1a1f2c; /* The specific blue-gray section background */
+  text-align: center;
+}
+
+.featured-projects-title {
+  color: white;
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 20px;
+}
+
+/* --- 2. FLEXBOX CONTAINER FOR THE ROW --- */
+
+.cards-container {
+  /* This creates the horizontal row */
+  display: flex;
+  flex-direction: row; /* Make cards align horizontally */
+  justify-content: center; /* Center the entire row of cards */
+  gap: 30px; /* Add even space between cards */
+  flex-wrap: wrap; /* Allows cards to wrap to a new line on smaller screens */
+
+  max-width: 1200px; /* Set a maximum width for the whole section */
+  width: 100%;
+  margin-top: 40px;
+}
+
+/* --- PROJECT CARD STYLING --- */
+
+.card {
+  /* Uniform Size */
+  flex: 1 1 300px; /* Flexible width with a 300px basis */
+  max-width: 350px; /* Maximum size for a card */
+  
+  /* Layout: Make card content a column */
+  display: flex;
+  flex-direction: column;
+  
+  /* Styles from reference image */
+  background-color: #1f2430; /* Specific card color */
+  border-radius: 20px; /* Larger rounded corners */
+  overflow: hidden; /* Ensure content doesn't break corners */
+  text-align: left; /* Align text within the card to the left */
+  
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.05); /* Subtle inner border */
+}
+
+/* Add a hover lift effect */
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+}
+
+/* --- 3. APPLY HIGHLIGHT BORDER --- */
+.card.featured-highlight {
+  border: 2px solid #38bdf8; /* Blue accent border from reference */
+  box-shadow: 0 0 20px rgba(56, 189, 248, 0.15); /* Soft blue glow */
+}
+
+/* --- IMAGE STYLING --- */
+
+.card-img-wrapper {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9; /* Ensure all images are the same shape */
+  overflow: hidden;
+}
+
+.project-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Crop and center image to fill the space */
+  transition: transform 0.5s ease;
+}
+
+.card:hover .project-img {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+/* --- TEXT CONTENT STYLING --- */
+
+.card-content {
+  padding: 25px; /* Spacing inside the card */
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1; /* Pushes the link to the bottom */
+  gap: 15px; /* Spacing between elements */
+}
+
+.card-content h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: white;
+}
+
+.card-content p {
+  color: #cbd5e1; /* Light gray text */
+  font-size: 1rem;
+  line-height: 1.6;
+  font-weight: 400;
+}
+
+/* Link and Arrow Styling */
+.card-link {
+  color: #38bdf8; /* Teal color */
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  margin-top: auto; /* Always align to the bottom */
+  transition: color 0.3s ease;
+}
+
+.card-link:hover {
+  color: #7dd3fc; /* Lighter teal on hover */
+}
+
+.card-link i {
+  margin-left: 8px; /* Spacing for the arrow icon */
+  transition: transform 0.3s ease;
+}
+
+.card-link:hover i {
+  transform: translateX(4px); /* Arrow moves slightly on hover */
+}
+
+/* CONTACT */
+form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  max-width: 400px;
+  margin-top: 30px;
+}
+
+input, textarea {
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #334155;
+  background: #1e293b;
+  color: #f8fafc;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #38bdf8;
+}
+
+/* SCROLL ANIMATIONS */
+.reveal {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease-out;
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}

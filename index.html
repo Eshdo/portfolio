@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eeshani | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+
+  <!-- NAV BAR CONTAINER -->
+<nav class="navbar">
+  
+  <!-- Child 1: Brand/Name on the Left -->
+  <div class="nav-brand">
+    <a href="#">Eeshani Fernando<span class="blue-dot">.</span></a>
+  </div>
+  
+  <!-- Child 2: Link group on the Right -->
+  <div class="nav-links">
+    <a href="#about" class="active">About</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </div>
+</nav>
+ 
+ 
+  <!-- HERO / ABOUT -->
+  <section class="hero reveal" id="about">
+    <img src="assets/profile.jpg" alt="Eeshani Profile Picture" class="profile">
+    <h1>Hi, I'm Eeshani 👋</h1>
+    <h2 id="typing"></h2>
+    <p>BA(Hons) in Information Technology</p>
+    <p>Undergraduate at University of Sri Jayewardenepura</p>
+    <p>AI & Data Science Enthusiast building real-world solutions.</p>
+    <a href="assets/resume.pdf" download class="btn">📄 Download Resume</a>
+	<div class="social-icons">
+		<a href="https://www.linkedin.com/in/eeshani-fernando-bb1116284/" target="_blank"><i class="fab fa-linkedin"></i></a>
+		<a href="https://github.com/Eshdo" target="_blank"><i class="fab fa-github"></i></a>
+		<a href="mailto:eshifernando@gmail.com"><i class="fas fa-envelope"></i></a>
+  </div>
+</section>
+	  
+  <!-- PROJECTS -->
+  <section class="projects reveal" id="projects">
+  <h3><center>Skills on:</center></h3>
+  <h2 id="skilltyping"></h2>
+    <h2 class="featured-projects-title">🚀 Featured Projects</h2>
+    
+	<div class="cards-container">
+	<!--Project 1-->
+    <div class="card featured-highlight">
+      <a href="#" class="card-img-wrapper">
+        <img src="assets/project1.png" class="project-img" alt="Student Performance Predictor">
+		</a>
+      <div class="card-content">
+        <h3>🎓 Student Performance Predictor</h3>
+        <p>A Machine Learning application that predicts student Pass/Fail outcomes utilizing comprehensive academic datasets and predictive modeling.</p>
+        <a href="https://student-prediction-ml-a65jifv9cytnbtrema6dmn.streamlit.app/" target="_blank" class="card-link">Live App <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+	<!--Project 2-->
+    <div class="card featured-highlight">
+      <a href="#" class="card-img-wrapper">
+        <img src="assets/project2.png" class="project-img" alt="Student Performance Predictor">
+		</a>
+      <div class="card-content">
+        <h3>🌻 Daily Gratitude Journal</h3>
+        <p>Productivity mobile app integrating daily task tracking, gratitude journaling, and a comprehensive to-do list.</p>
+        <a href="https://gratitude-app-u7dc.vercel.app/" target="_blank" class="card-link">Live App <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+	<!--Project 3-->
+    <div class="card featured-highlight">
+      <a href="#" class="card-img-wrapper">
+        <img src="assets/project3.png" class="project-img" alt="Student Performance Predictor">
+		</a>
+      <div class="card-content">
+        <h3>🎯 WinTurn Institute Website</h3>
+        <p>WooCommerce-powered educational e-commerce platform selling specialized e-books and interactive video training sessions.</p>
+        <a href="https://gratitude-app-u7dc.vercel.app/" target="_blank" class="card-link">Demo video<i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+	<!--Project 4-->
+    <div class="card featured-highlight">
+      <a href="#" class="card-img-wrapper">
+        <img src="assets/project4.png" class="project-img" alt="Student Performance Predictor">
+		</a>
+      <div class="card-content">
+        <h3>📊 AI Business Dashboard</h3>
+        <p>An AI-powered business analytics dashboard that transforms raw data into actionable insights using interactive visualizations and large language models.</p>
+		<a href="https://ai-business-dashboard-a5dzhwkjlmf3plkgbsbwfp.streamlit.app/" target="_blank" class="card-link">Live App <i class="fa-solid fa-arrow-right"></i></a>
+      </div>
+    </div>
+  </section>
+  
+
+
+  <!-- CONTACT -->
+  <section class="contact reveal" id="contact">
+    <h2>📬 Contact Me</h2>
+    
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" rows="5" required></textarea>
+      <button type="submit" class="btn">Send</button>
+    </form>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
