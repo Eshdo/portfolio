@@ -1,5 +1,5 @@
 // 1. TYPING EFFECT
-const text = ["IT Undergraduate","WordPress Web Designer", "AI & ML Developer", "ML Enthusiast", "Data Analyst"];
+const text = ["IT Undergraduate", "WordPress Web Designer", "Canva Designer", "AI & ML Developer", "ML Enthusiast", "Data Analyst"];
 let i = 0;
 let j = 0;
 let currentText = "";
